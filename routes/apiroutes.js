@@ -23,10 +23,10 @@ router.post('/notes', (req, res) => {
     })
 });
 
-router.post("/delete/:id", async (req, res) => {
-    const result = await Notification.findByIdAndDelete(req.note.id);
-    res.redirect("back");
-  });
+// router.post("/delete/:id", async (req, res) => {
+//     const result = await Notification.findByIdAndDelete(req.note.id);
+//     res.redirect("back");
+//   });
 
 // async.createNewRecord(attributes);{
 //     attributes.id = this.generateUniqueID()
